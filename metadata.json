@@ -1,0 +1,20 @@
+{
+  "author": "Jeff Picklyk",
+  "dependencies": [
+    { "name": "puppetlabs/stdlib", "version_requirement": ">=3.0.0 <5.0.0" },
+    { "name": "puppetlabs/powershell", "version_requirement": ">= 1.0.3" }
+  ],
+  "license": "Apache License 2.0",
+  "name": "jpicklyk-windowsps",
+  "operatingsystem_support": [  
+    {
+    "operatingsystem":"windows"
+    }  
+  ],
+  "project_page": "https://github.com/jpicklyk/puppet-windowsps",
+  "requirements": [],
+  "source": "https://github.com/jpicklyk/puppet-windowsps",
+  "summary": "A module used to Upgrade PowerShell on Windows 2003, 2008, 2008 R2, 2012, and 2012 R2",
+  "tags": ["windows", "powershell"],
+  "version": "0.1.0"
+}
