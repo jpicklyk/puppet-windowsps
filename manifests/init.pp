@@ -19,25 +19,25 @@ class windowsps(
   case $version {
     '1': {
       case $::operatingsystemversion {
-        /^Windows.Server.(2003).?(R2)?.*/: { include windowsps::install }
+        /^Windows.Server.(2003).?(R2)?.*/: { contain windowsps::install }
         default: { debug("powershell version: ${version} is not needed on this version of windows") }
       }
     }
     '2': {
       case $::operatingsystemversion {
-        /^Windows.Server.(2003|2008).*/: { include windowsps::install }
+        /^Windows.Server.(2003|2008).*/: { contain windowsps::install }
         default: { debug("powershell version: ${version} is not needed on this version of windows") }
       }
     }
     '3': {
       case $::operatingsystemversion {
-        /^Windows.Server.(2008).?(R2)?.*/: { include windowsps::install }
+        /^Windows.Server.(2008).?(R2)?.*/: { contain windowsps::install }
         default: { debug("powershell version: ${version} is not needed on this version of windows") }
       }
     }
     '4': {
       case $::operatingsystemversion {
-        /^^Windows.Server.(2008 R2|2012).*/: { include windowsps::install }
+        /^^Windows.Server.(2008 R2|2012).*/: { contain windowsps::install }
         default: { debug("powershell version: ${version} is not needed on this version of windows") }
       }
     }
