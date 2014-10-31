@@ -42,7 +42,7 @@ class windowsps(
       }
     }
     default: {
-      err("powershell ${version} is not supported on this version of windows")
+      fail("powershell ${version} is not supported on this version of windows")
     }
   }
 
