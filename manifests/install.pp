@@ -12,7 +12,7 @@ class windowsps::install(
   file { "download-powershell.ps1":
     ensure  => present,
     path    => "C:\\Windows\\Temp\\download-powershell.ps1",
-    content => template('powershell/download.ps1.erb')
+    content => template('windowsps/download.ps1.erb')
   }
 
   exec { "download-${file}":
