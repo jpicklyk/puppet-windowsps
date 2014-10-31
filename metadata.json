@@ -16,5 +16,5 @@
   "source": "https://github.com/jpicklyk/puppet-windowsps",
   "summary": "A module used to Upgrade PowerShell on Windows 2003, 2008, 2008 R2, 2012, and 2012 R2",
   "tags": ["windows", "powershell"],
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
